@@ -7,6 +7,7 @@ This is confirmed to work with Firefox 42 BETA with the latest Greasemonkey and 
 
 
 Greasemonkey: https://addons.mozilla.org/en-us/firefox/addon/greasemonkey/
+
 Tampermonkey: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
 
 
