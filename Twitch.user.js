@@ -5,6 +5,8 @@
 // @author       Devrim
 // @match        http://twitch.tv/*
 // @match        http://*.twitch.tv/*
+// @exclude      http://twitch.tv/*/v/*
+// @exclude      http://*.twitch.tv/*/v/*
 // @run-at       document-end
 // @grant        none
 // ==/UserScript==
