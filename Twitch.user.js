@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Twitch.tv Full HTML5 Player
-// @version      1.2.1
+// @version      1.2.2
 // @description  Twitch.tv Full HTML5 Player
 // @author       Devrim
 // @match        http://twitch.tv/*
@@ -24,4 +24,6 @@ setTimeout(function() {
     );
     $(".player-overlay").hide(); 
     $(".player-loading").hide(); 
+    $(".player-buttons-right").css("padding","0px 50px 0px 0px");
+
 },5000);
