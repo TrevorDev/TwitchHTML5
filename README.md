@@ -3,7 +3,7 @@ Twitch.tv Full HTML5 Player
 
 
 
-This is confirmed to work with Firefox 42 BETA with the latest Greasemonkey and Chrome 46 with Tampermonkey.
+This is confirmed to work with Firefox 42 and newer with the latest Greasemonkey and Chrome 46 and newer with Tampermonkey.
 
 
 Greasemonkey: https://addons.mozilla.org/en-us/firefox/addon/greasemonkey/
