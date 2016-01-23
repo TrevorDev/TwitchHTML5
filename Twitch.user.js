@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Twitch.tv Full HTML5 Player
-// @version      1.2.1
+// @version      1.2.3
 // @description  Twitch.tv Full HTML5 Player
 // @author       Devrim
 // @match        http://twitch.tv/*
