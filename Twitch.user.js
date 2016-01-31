@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Twitch.tv Full HTML5 Player
-// @version      1.3.2
+// @version      1.3.3
 // @description  Twitch.tv Full HTML5 Player
 // @author       Devrim
 // @match        http://twitch.tv/*
@@ -30,7 +30,6 @@ setTimeout(function html5() {
     $(".enter-theater-button").toggle(function enable() {
     $("#player").removeClass("dynamic-player");
     $(".app-main").addClass("theatre");
-    $(".popup").css("display","none");
     $(".conversations-content .conversations-list-container").css("display","none");
       }, function disable() {
     $("#player").addClass("dynamic-player");
