@@ -1,12 +1,17 @@
 // ==UserScript==
 // @name         Twitch.tv Full HTML5 Player
-// @version      1.3.4
+// @version      1.4.0
 // @description  Twitch.tv Full HTML5 Player
 // @author       Devrim
 // @include /^https?://(.*\.)?twitch\.tv/.*(?!/v/).*$/
 // ==/UserScript==
 
-setTimeout(function html5() {
+    $(window).load(function html5() {
+    $("a").removeAttr("data-ember-action");
+    $(".clearfix").removeAttr("data-ember-action");
+    $(".boxart").removeAttr("data-ember-action");
+    $(".cap").removeAttr("data-ember-action");
+    $("href").removeAttr("data-ember-action");
     $(".js-player").html(
         $("<iframe>").attr({
             "src": "http://player.twitch.tv/?branding=false&html5&quality=source&showInfo=false&channel=" + $(location).attr('pathname'),
@@ -21,6 +26,7 @@ setTimeout(function html5() {
     );
     $(".player-overlay").hide(); 
     $(".player-loading").hide(); 
+    $(".player-button--twitch").hide();
     var r= $('<button class="button primary float-left enter-theater-button"><span>Theater Mode</span></button>');
     $(".ember-chat .chat-interface .chat-buttons-container").append(r)
     $(".enter-theater-button").toggle(function enable() {
@@ -32,4 +38,4 @@ setTimeout(function html5() {
     $(".app-main").removeClass("theatre");
         });
           
-},5000);
+});
