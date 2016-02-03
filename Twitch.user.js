@@ -1,13 +1,9 @@
 // ==UserScript==
 // @name         Twitch.tv Full HTML5 Player
-// @version      1.3.3
+// @version      1.3.4
 // @description  Twitch.tv Full HTML5 Player
 // @author       Devrim
-// @match        http://twitch.tv/*
-// @match        http://*.twitch.tv/*
-// @exclude      http://twitch.tv/*/v/*
-// @exclude      http://*.twitch.tv/*/v/*
-// @run-at       document-end
+// @include /^https?://(.*\.)?twitch\.tv/.*(?!/v/).*$/
 // ==/UserScript==
 
 setTimeout(function html5() {
