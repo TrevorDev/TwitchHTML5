@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Twitch.tv Full HTML5 Player
-// @version      1.4.0
+// @version      1.4.1
 // @description  Twitch.tv Full HTML5 Player
 // @author       Devrim
 // @include /^https?://(.*\.)?twitch\.tv/.*(?!/v/).*$/
@@ -11,7 +11,7 @@
     $(".clearfix").removeAttr("data-ember-action");
     $(".boxart").removeAttr("data-ember-action");
     $(".cap").removeAttr("data-ember-action");
-    $("href").removeAttr("data-ember-action");
+    $(".js-search-name").removeAttr("data-ember-action");
     $(".js-player").html(
         $("<iframe>").attr({
             "src": "http://player.twitch.tv/?branding=false&html5&quality=source&showInfo=false&channel=" + $(location).attr('pathname'),
