@@ -3,15 +3,16 @@ Thanks to https://github.com/BrockA for WaitForKeyElements.js
 **/
 // ==UserScript==
 // @name         Twitch.tv Full HTML5 Player
-// @version      1.5.0
+// @version      1.5.1
 // @description  Twitch.tv Full HTML5 Player
 // @author       Devrim
-// @include /https?://(.*\.)?twitch.tv/
-// @require https://github.com/EchoDev/TwitchHTML5/raw/master/waitForKeyElements.js
+// @include      /https?://(.*\.)?twitch.tv/
+// @require      https://github.com/EchoDev/TwitchHTML5/raw/master/waitForKeyElements.js
 // ==/UserScript==
     waitForKeyElements("div[class^='js-player']", html5);
-    function html5(){$("[class^='js-player']").html($("<iframe>").attr({
-            "src": "http://player.twitch.tv/?branding=false&html5&quality=source&showInfo=false&channel=" + $(location).attr('pathname'),
+    function html5(){
+           $("[class^='js-player']").html($("<iframe>").attr({
+            "src": location.protocol + "//player.twitch.tv/?branding=false&html5&quality=source&showInfo=false&channel=" + $(location).attr('pathname'),
             "width": "100%",
             "height": "100%",
             "allowfullscreen": true,
