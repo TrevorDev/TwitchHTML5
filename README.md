@@ -40,5 +40,7 @@ Note: To disable Flash in Firefox you can uninstall the Flash NPAPI plugin, to d
 Note 2: This script might not work when the FrankerFaceZ addon is enabled
 
 ***Why are these changes needed and what do they mean?
-1. By default Firefox and Chrome block HTTP content on HTTPS sites. This means that 'insecure' content will not be loaded when using a 'secure' site. Due to Twitch switching to HTTPS on the site but remain using HTTP for their streaming domains, the HTML5 player will block the streaming files. To circumvent this, changes are needed to the browser configuration.
+
+1. By default Firefox and Chrome block HTTP content on HTTPS sites. This means that 'insecure' content will not be loaded when using a 'secure' site. Due to Twitch switching to HTTPS on the site but remain using HTTP for their streaming domains, the HTML5 player will block the streaming files. To circumvent this, changes are needed to the browser configuration
+
 2. These changes mean that 'insecure' content on ALL SITES that use HTTPS will be loaded, not just Twitch.tv. When a HTTPS site loads HTTP content Firefox will display a lock icon with a red line over it. Chrome will draw a red line over HTTPS on the addressbar. If you see this it means the page you are on is insecure(!)
