@@ -28,7 +28,9 @@ OR
 
 Enter about:config into the address bar and click "I'll be carefull, I promise". Then enter the following in the search bar
 security.mixed_content.block_active_content
-Right click on the result and press the toggle
+Right click on the result and press the toggle.
+This should result in security.mixed_content.block_active_content set to FALSE.
+
 
 4b: Chrome users***
 See the following page: https://support.google.com/chrome/answer/1342714?hl=en
@@ -44,3 +46,6 @@ Note 2: This script might not work when the FrankerFaceZ addon is enabled
 1. By default Firefox and Chrome block HTTP content on HTTPS sites. This means that 'insecure' content will not be loaded when using a 'secure' site. Due to Twitch switching to HTTPS on the site but remain using HTTP for their streaming domains, the HTML5 player will block the streaming files. To circumvent this, changes are needed to the browser configuration
 
 2. These changes mean that 'insecure' content on ALL SITES that use HTTPS will be loaded, not just Twitch.tv. When a HTTPS site loads HTTP content Firefox will display a lock icon with a red line over it. Chrome will draw a red line over HTTPS on the addressbar. If you see this it means the page you are on is insecure(!)
+
+More info related to mixed content blocking: 
+https://support.mozilla.org/en-US/kb/mixed-content-blocking-firefox
