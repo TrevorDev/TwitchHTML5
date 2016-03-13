@@ -3,7 +3,7 @@ Thanks to https://github.com/BrockA for WaitForKeyElements.js
 **/
 // ==UserScript==
 // @name         Twitch.tv Full HTML5 Player
-// @version      1.6.1
+// @version      1.6.2
 // @description  Twitch.tv Full HTML5 Player
 // @author       Devrim
 // @include      /https?://(.*\.)?twitch.tv/
@@ -68,3 +68,20 @@ Thanks to https://github.com/BrockA for WaitForKeyElements.js
 
         });      
 }
+
+    waitForKeyElements("div[class^='live_frontpage_player_container']", html5fp);
+    function html5fp(){
+           var fp = $(".active").find(".name").text();
+           $("[class^='live_frontpage_player_container']").html($("<iframe>").attr({
+            "src": location.protocol + "//player.twitch.tv/?branding=false&html5&quality=source&showInfo=false&channel=" + (fp),
+            "width": "100%",
+            "height": "100%",
+            "allowfullscreen": true,
+            "webkitallowfullscreen": true,
+            "mozallowfullscreen": true,            
+    }).css(
+            "border", 0
+        )
+    );
+
+        };      
