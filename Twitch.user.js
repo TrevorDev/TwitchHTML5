@@ -3,7 +3,7 @@ Thanks to https://github.com/BrockA for WaitForKeyElements.js
 **/
 // ==UserScript==
 // @name         Twitch.tv Full HTML5 Player
-// @version      1.6.0
+// @version      1.6.1
 // @description  Twitch.tv Full HTML5 Player
 // @author       Devrim
 // @include      /https?://(.*\.)?twitch.tv/
@@ -52,6 +52,7 @@ Thanks to https://github.com/BrockA for WaitForKeyElements.js
     );
     var r= $('<button class="button primary float-left enter-theater-button-host"><span>Theater Mode</span></button>');
     $(".enter-theater-button").remove();
+    $(".app-main").removeClass("theatre");
     $(".ember-chat .chat-interface .chat-buttons-container").append(r)
     $(".enter-theater-button-host").toggle(function enable() {
     $(".app-main").addClass("theatre");
