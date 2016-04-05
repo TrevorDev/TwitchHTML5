@@ -73,7 +73,7 @@ Thanks to https://github.com/BrockA for WaitForKeyElements.js
     waitForKeyElements("div[class^='archive_info']", html5vod);
     function html5vod(){
            $("[class^='dynamic-player']").html($("<iframe>").attr({
-            "src": location.protocol + "//player.twitch.tv/?html5&!branding&!showInfo&video=v" +  window.location.href.split('/').pop(),
+            "src": location.protocol + "//player.twitch.tv/?html5&!branding&!showInfo&video=v" + window.location.href.split('/').pop(),
             "width": "100%",
             "height": "100%",
             "allowfullscreen": true,
