@@ -7,6 +7,8 @@ Thanks to https://github.com/BrockA for WaitForKeyElements.js
 // @description  Twitch.tv Full HTML5 Player
 // @author       Devrim
 // @contributor  vBm <vbm@omertabeyond.com>
+// @homepage     https://github.com/EchoDev/TwitchHTML5
+// @supportURL   https://github.com/EchoDev/TwitchHTML5/issues
 // @include      /https?://(.*\.)?twitch.tv/
 // @require      https://github.com/EchoDev/TwitchHTML5/raw/master/waitForKeyElements.js
 // ==/UserScript==
