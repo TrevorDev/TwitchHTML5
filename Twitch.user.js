@@ -11,7 +11,7 @@ Thanks to https://github.com/BrockA for WaitForKeyElements.js
 // ==/UserScript==
 
 waitForKeyElements("div[class^='js-player']", html5);
-function html5(){
+function html5() {
     $("[class^='js-player']").html(
         $("<iframe>").attr({
             "src": location.protocol + "//player.twitch.tv/?!branding&html5&quality=source&!showInfo&channel=" + $(location).attr('pathname'),
@@ -29,7 +29,7 @@ function html5(){
     $(".enter-theater-button").toggle(function enable() {
         $("#player").removeClass("dynamic-player");
         $(".app-main").addClass("theatre");
-        $(".conversations-content .conversations-list-container").css("display","none");
+        $(".conversations-content .conversations-list-container").css("display", "none");
     }, function disable() {
         $("#player").addClass("dynamic-player");
         $(".app-main").removeClass("theatre");
@@ -37,10 +37,10 @@ function html5(){
 }
 
 waitForKeyElements("div[class^='dynamic-target-player']", html5host);
-function html5host(){
+function html5host() {
     var target = $(".target-user-and-game").text();
     var trimmed = $.trim(target);
-    var host = trimmed.split(" ",1);
+    var host = trimmed.split(" ", 1);
     $("[class^='dynamic-target-player']").html(
         $("<iframe>").attr({
             "src": location.protocol + "//player.twitch.tv/?!branding&html5&quality=source&!showInfo&channel=" + (host),
@@ -62,7 +62,7 @@ function html5host(){
         $(".dynamic-target-player").addClass("target-player");
         $(".dynamic-target-player").removeClass("dynamic-target-player");
         $(".dynamic-player").removeClass("dynamic-player");
-        $(".conversations-content .conversations-list-container").css("display","none");
+        $(".conversations-content .conversations-list-container").css("display", "none");
     }, function disable() {
         $(".app-main").removeClass("theatre");
         $(".target-player").addClass("dynamic-player");
@@ -72,7 +72,7 @@ function html5host(){
 }
 
 waitForKeyElements("div[class^='archive_info']", html5vod);
-function html5vod(){
+function html5vod() {
     $("[class^='dynamic-player']").html(
         $("<iframe>").attr({
             "src": location.protocol + "//player.twitch.tv/?html5&!branding&!showInfo&video=v" + window.location.href.split('/').pop(),
@@ -88,7 +88,7 @@ function html5vod(){
 }
 
 waitForKeyElements("div[class^='live_frontpage_player_container']", html5fp);
-function html5fp(){
+function html5fp() {
     var fp = $(".active").find(".name").text();
     $("[class^='live_frontpage_player_container']").html(
         $("<iframe>").attr({
