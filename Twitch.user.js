@@ -11,6 +11,7 @@ Thanks to https://github.com/BrockA for WaitForKeyElements.js
 // @supportURL   https://github.com/EchoDev/TwitchHTML5/issues
 // @include      /https?://(.*\.)?twitch.tv/
 // @require      https://github.com/EchoDev/TwitchHTML5/raw/master/waitForKeyElements.js
+// @icon         https://www.twitch.tv/favicon.ico
 // ==/UserScript==
 
 waitForKeyElements("div[class^='js-player']", html5);
