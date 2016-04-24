@@ -25,7 +25,7 @@ function html5(){
         )
     );
     var r= $('<button class="button primary float-left enter-theater-button"><span>Theater Mode</span></button>');
-    $(".ember-chat .chat-interface .chat-buttons-container").append(r)
+    $(".ember-chat .chat-interface .chat-buttons-container").append(r);
     $(".enter-theater-button").toggle(function enable() {
         $("#player").removeClass("dynamic-player");
         $(".app-main").addClass("theatre");
@@ -56,7 +56,7 @@ function html5host(){
     var r= $('<button class="button primary float-left enter-theater-button-host"><span>Theater Mode</span></button>');
     $(".enter-theater-button").remove();
     $(".app-main").removeClass("theatre");
-    $(".ember-chat .chat-interface .chat-buttons-container").append(r)
+    $(".ember-chat .chat-interface .chat-buttons-container").append(r);
     $(".enter-theater-button-host").toggle(function enable() {
         $(".app-main").addClass("theatre");
         $(".dynamic-target-player").addClass("target-player");
@@ -102,4 +102,4 @@ function html5fp(){
             "border", 0
         )
     );
-};
+}
