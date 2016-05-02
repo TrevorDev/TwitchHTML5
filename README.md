@@ -33,6 +33,11 @@ This should result in security.mixed_content.block_active_content set to FALSE.
 
 
 4b: Chrome users***
+Launch chrome with --allow-running-insecure-content by for instance updating the target path inside the shortcut to look like
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-running-insecure-content
+
+OR
+
 See the following page: https://support.google.com/chrome/answer/1342714?hl=en
 
 5. You are done, you can disable Flash and use Twitch.tv in full HTML5
