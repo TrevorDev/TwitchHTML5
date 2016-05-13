@@ -5,6 +5,7 @@ Twitch.tv Full HTML5 Player
 
 This is confirmed to work with Firefox 42 and newer with the latest Greasemonkey and Chrome 46 and newer with Tampermonkey.
 
+# Installation instructions
 
 Greasemonkey: https://addons.mozilla.org/en-us/firefox/addon/greasemonkey/
 
@@ -54,3 +55,6 @@ Note 2: This script might not work when the FrankerFaceZ addon is enabled
 
 More info related to mixed content blocking: 
 https://support.mozilla.org/en-US/kb/mixed-content-blocking-firefox
+
+## For more info and workarounds please refer to our FAQ:
+[TwitchHTML5 FAQ](https://github.com/EchoDev/TwitchHTML5/wiki)
