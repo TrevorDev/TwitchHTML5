@@ -3,7 +3,7 @@ Thanks to https://github.com/BrockA for WaitForKeyElements.js
 **/
 // ==UserScript==
 // @name         Twitch.tv Full HTML5 Player
-// @version      1.7.0
+// @version      1.7.1
 // @description  Twitch.tv Full HTML5 Player
 // @author       Devrim
 // @contributor  vBm <vbm@omertabeyond.com>
